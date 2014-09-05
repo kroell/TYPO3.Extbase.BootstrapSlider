@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-09-04T18:01:59Z" product-name="sk_bootstrap_slider">
+		<header/>
+		<body>
+			<trans-unit id="tx_skbootstrapslider_domain_model_slider">
+				<source>Slider</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_slider.title">
+				<source>Titel</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_slider.items">
+				<source>Items</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item">
+				<source>Item</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item.caption_title">
+				<source>Beschreibungstitel</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item.caption_text">
+				<source>Beschreibungstext</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item.caption_bullets">
+				<source>Beschreibungsliste</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item.link">
+				<source>Link</source>
+			</trans-unit>
+			<trans-unit id="tx_skbootstrapslider_domain_model_item.image">
+				<source>Bild</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

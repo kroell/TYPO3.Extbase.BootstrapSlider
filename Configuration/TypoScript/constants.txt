@@ -1,0 +1,15 @@
+
+plugin.tx_skbootstrapslider {
+	view {
+		# cat=plugin.tx_skbootstrapslider/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:sk_bootstrap_slider/Resources/Private/Templates/
+		# cat=plugin.tx_skbootstrapslider/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:sk_bootstrap_slider/Resources/Private/Partials/
+		# cat=plugin.tx_skbootstrapslider/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:sk_bootstrap_slider/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_skbootstrapslider//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

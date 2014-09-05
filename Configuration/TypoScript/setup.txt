@@ -1,0 +1,31 @@
+
+plugin.tx_skbootstrapslider {
+	view {
+		templateRootPath = {$plugin.tx_skbootstrapslider.view.templateRootPath}
+		partialRootPath = {$plugin.tx_skbootstrapslider.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_skbootstrapslider.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_skbootstrapslider.persistence.storagePid}
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		# rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_skbootstrapslider._CSS_DEFAULT_STYLE >
+
+page {
+	includeCSS {
+		mainCSS = EXT:sk_bootstrap_slider/Resources/Public/Css/bootstrap-slider.css
+		#mainCSS.excludeFromConcatenation = 1
+		#mainCSS.disableCompression = 1
+		#mainCSS.external = 1
+	}
+	includeJSFooter{
+		#google = http://maps.google.com/maps/api/js?v=3.2&amp;sensor=false
+		#google.excludeFromConcatenation = 1
+		#google.disableCompression = 1
+	}
+}

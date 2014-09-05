@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="de" datatype="plaintext" original="messages" date="2014-09-04T18:01:59Z" product-name="sk_bootstrap_slider">
+		<header/>
+		<body>
+			<trans-unit id="caption_title.description">
+				<source>captionTitle</source>
+			</trans-unit>
+			<trans-unit id="caption_text.description">
+				<source>captionText</source>
+			</trans-unit>
+			<trans-unit id="caption_bullets.description">
+				<source>captionBullets</source>
+			</trans-unit>
+			<trans-unit id="link.description">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="image.description">
+				<source>image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

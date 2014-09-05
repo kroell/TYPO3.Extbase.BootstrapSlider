@@ -1,0 +1,42 @@
+<T3DataStructure>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>Einstellungen</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<switchableControllerActions>
+						<TCEforms>
+							<label>Ansichten</label>
+							<config>
+								<type>select</type>
+								<items>
+									<numIndex index="0">
+										<numIndex index="0">Slider anzeigen</numIndex>
+										<numIndex index="1">Slider->list;Slider->show</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</switchableControllerActions>
+					
+					<settings.interval>
+				      <TCEforms>
+				     <exclude>1</exclude>
+						<label>Interval festlegen (Default: 5000)</label>
+						<config>
+						  <type>input</type>
+						  <size>20</size>
+						  <max>30</max>
+						  <eval>trim</eval>
+						</config>
+						</TCEforms>
+					</settings.interval>
+					
+				</el>
+			</ROOT>
+		</sDEF>
+	</sheets>
+</T3DataStructure>

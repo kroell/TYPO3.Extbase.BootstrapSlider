@@ -1,0 +1,46 @@
+<f:layout name="Default" />
+
+
+<f:section name="main">
+
+<f:debug>{slider}</f:debug>
+
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  <!-- Indicators -->
+	  <ol class="carousel-indicators">
+	  	 <f:for each="{slider.items}" as="item" iteration="itemIteration">
+	  	 	<li data-target="#carousel-example-generic" data-slide-to="{itemIteration.index}" class="{f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')}"></li>
+	    </f:for>
+	  </ol>
+	  
+	  <!-- Wrapper for slides -->
+	 <div class="carousel-inner">
+		  
+		  <f:for each="{slider.items}" as="item" iteration="itemIteration">
+		  	
+			  
+			    <div class="item {f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')}">
+			    	
+			    <f:image src="{item.image.originalResource.publicUrl}" alt="My Image" />
+			      <div class="carousel-caption">
+			      	<h3>{item.captionTitle}</h3>
+			        <p>{item.captionText}</p>
+			      </div>
+			    </div>
+			   
+	
+		  </f:for>
+	  </div>
+	
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+	    <span class="glyphicon glyphicon-chevron-left"></span>
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+	    <span class="glyphicon glyphicon-chevron-right"></span>
+	  </a>
+	</div>
+
+
+
+</f:section>

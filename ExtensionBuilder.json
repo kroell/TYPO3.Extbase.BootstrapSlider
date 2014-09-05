@@ -1,0 +1,192 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    122,
+                    266
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Slider",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "Slider",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "282191580198"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "1089742298909"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+                        {
+                            "foreignRelationClass": "",
+                            "lazyLoading": true,
+                            "propertyIsExcludeField": false,
+                            "relationDescription": "Slider Items",
+                            "relationName": "items",
+                            "relationType": "zeroToMany",
+                            "relationWire": "[wired]",
+                            "uid": "1014556217246"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "config": {
+                "position": [
+                    657,
+                    121
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": false,
+                    "_default1_show": false,
+                    "_default2_new_create": false,
+                    "_default3_edit_update": false,
+                    "_default4_delete": false,
+                    "customActions": []
+                },
+                "name": "Item",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": false,
+                    "categorizable": false,
+                    "description": "Single Slider Item",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "329768588381"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "captionTitle",
+                            "propertyType": "String",
+                            "uid": "16500570148"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "captionText",
+                            "propertyType": "Text",
+                            "uid": "1329939837803"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "image",
+                            "propertyType": "Image",
+                            "uid": "243394628680"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 6.2\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "sourceLanguage": "de",
+            "state": "alpha",
+            "targetVersion": "6.2",
+            "version": "0.8"
+        },
+        "extensionKey": "sk_bootstrap_slider",
+        "name": "Bootstrap Image Slider #SK",
+        "originalExtensionKey": "sk_bootstrap_slider",
+        "persons": [
+            {
+                "company": "",
+                "email": "hallo@soerenkroell.com",
+                "name": "Soeren Kroell",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": "Slider anzeigen\nSlider->show;Slider->list"
+                },
+                "key": "bootstrapslider",
+                "name": "Bootstrap Image Slider #SK"
+            }
+        ],
+        "vendorName": "SoerenKroell"
+    },
+    "wires": [
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_0",
+                "uid": "1014556217246"
+            },
+            "tgt": {
+                "moduleId": 1,
+                "terminal": "SOURCES",
+                "uid": "329768588381"
+            }
+        }
+    ],
+    "log": {
+        "last_modified": "2014-09-04 06:02",
+        "extension_builder_version": "6.2.0",
+        "be_user": "Soeren (3)"
+    }
+}

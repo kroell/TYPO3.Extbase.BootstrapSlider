@@ -1,0 +1,102 @@
+{namespace skbs=SoerenKroell\SkBootstrapSlider\ViewHelpers}
+
+<f:layout name="Default" />
+
+<f:section name="main">
+
+	<f:flashMessages renderMode="div" />
+
+	<f:if condition="<f:count subject='{sliders}' /> > 0">
+	
+		<f:for each="{sliders}" as="slider">
+	
+			<div id="image-carousel" class="carousel slide" data-ride="carousel">
+			
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			  	 <f:for each="{slider.items}" as="item" iteration="itemIteration">
+			  	 	<li data-target="#image-carousel" data-slide-to="{itemIteration.index}" class="{f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')}"></li>
+			    </f:for>
+			  </ol>
+			  
+			  <!-- Wrapper for slides -->
+			 <div class="carousel-inner">
+				  
+				  <f:for each="{slider.items}" as="item" iteration="itemIteration">
+					  
+					    <div class="item {f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')}">
+									
+						    <f:image class="sk-bootstrap-slide" src="{item.image.originalResource.publicUrl}" alt="{item.captionTitle}" />
+						    <div class="carousel-caption">
+						    	<f:if condition="{item.link}">
+						        	<f:then>
+						        		<a href="index.php?id={item.link}"><h1>{item.captionTitle}</h1></a>
+						        	</f:then>
+						        	<f:else>
+						        		<h1>{item.captionTitle}</h1>
+						        	</f:else>
+						        </f:if>
+						    	
+						    	<f:if condition="{item.captionText}">
+						        	<p>{item.captionText}</p>
+						    	</f:if>
+						        
+						        <f:if condition="{item.captionBullets}">
+						        	<div class="caption-bullets">
+						        		<skbs:bullets string="{item.captionBullets}"></skbs:bullets>
+						        	</div>
+						        </f:if>
+						        
+						        <f:if condition="{item.link}">
+						        	<div class="carousel-caption-readmore">
+						        		<a href="index.php?id={item.link}" class="btn btn-primary btn-lg">Erfahren Sie mehr.</a>
+						        	</div>
+						        </f:if>
+						    </div>
+					    </div>
+					   
+				  </f:for>
+				  
+			  </div>
+			
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#image-carousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left icon icon-arrow-65"></span>
+			  </a>
+			  <a class="right carousel-control" href="#image-carousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right icon icon-arrow-66"></span>
+			  </a>
+			</div>
+		</f:for>
+		
+	</f:if>
+	
+	
+	<script>
+		
+		var interval = intval('<skbs:escape value="{interval}"></skbs:escape >');
+		if(!interval){
+			interval = 5000;
+		}
+		
+		$('#image-carousel').carousel({
+		  interval: interval
+		});
+		
+		/*
+paceOptions = {
+	      elements: true
+	    };
+		$('#image-carousel').on('slide.bs.carousel', function () {
+			console.log('test');
+			Pace.start();
+		})
+		
+		Pace.on('done', function(){
+			Pace.restart();
+	      console.log('done');
+	    });
+*/
+	</script>
+	
+</f:section>
