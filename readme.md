@@ -9,3 +9,5 @@ http://getbootstrap.com/javascript/#carousel
 * Datensaetze im Backend anlegen und ID der Datensatzsammlung in den Konstanten der Extension eintragen
 * PlugIns auf der gewuenschten Seite eintragen
 * Viel Spass
+
+Die Einbindung von Bootstrap muss separat erfolgen. Wird nicht durch die Ext eingebunden.
