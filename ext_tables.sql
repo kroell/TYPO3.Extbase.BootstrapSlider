@@ -53,6 +53,9 @@ CREATE TABLE tx_skbootstrapslider_domain_model_item (
 	caption_bullets text NOT NULL,
 	link varchar(255) DEFAULT '' NOT NULL,
 	image int(11) unsigned NOT NULL default '0',
+	background_position_x int(11) DEFAULT '50' NOT NULL,
+	background_position_y int(11) DEFAULT '50' NOT NULL,
+	background_size int(11) DEFAULT '100' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

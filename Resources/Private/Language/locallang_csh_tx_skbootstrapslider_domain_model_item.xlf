@@ -18,6 +18,15 @@
 			<trans-unit id="image.description">
 				<source>image</source>
 			</trans-unit>
+			<trans-unit id="background_position_x.description">
+				<source>X-Position (in %)</source>
+			</trans-unit>
+			<trans-unit id="background_position_y.description">
+				<source>Y-Position (in %)</source>
+			</trans-unit>
+			<trans-unit id="background_size.description">
+				<source>Groesse (in %)</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

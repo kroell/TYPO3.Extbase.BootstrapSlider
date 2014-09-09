@@ -156,7 +156,34 @@ $GLOBALS['TCA']['tx_skbootstrapslider_domain_model_item'] = array(
 				$GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
 			),
 		),
+		'background_position_x' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:sk_bootstrap_slider/Resources/Private/Language/locallang_db.xlf:tx_skbootstrapslider_domain_model_item.background_position_x',
+			'config' => array(
+				'type' => 'input',
+				'size' => 3,
+				'eval' => 'int'
+			),
+		),
 		
+		'background_position_y' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:sk_bootstrap_slider/Resources/Private/Language/locallang_db.xlf:tx_skbootstrapslider_domain_model_item.background_position_y',
+			'config' => array(
+				'type' => 'input',
+				'size' => 3,
+				'eval' => 'int'
+			),
+		),
+		'background_size' => array(
+			'exclude' => 1,
+			'label' => 'LLL:EXT:sk_bootstrap_slider/Resources/Private/Language/locallang_db.xlf:tx_skbootstrapslider_domain_model_item.background_size',
+			'config' => array(
+				'type' => 'input',
+				'size' => 3,
+				'eval' => 'int'
+			),
+		),
 		
 		'slider' => array(
 			'config' => array(

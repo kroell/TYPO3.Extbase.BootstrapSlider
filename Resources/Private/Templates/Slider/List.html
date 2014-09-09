@@ -24,9 +24,8 @@
 				  
 				  <f:for each="{slider.items}" as="item" iteration="itemIteration">
 					  
-					    <div class="item {f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')}">
-									
-						    <f:image class="sk-bootstrap-slide" src="{item.image.originalResource.publicUrl}" alt="{item.captionTitle}" />
+					    <div class="item {f:if(condition:'{itemIteration.index} == 0', then: 'active', else: '')} " >
+					    	<div class="item-image alpha60" style="background-image: url({item.image.originalResource.publicUrl}); background-position: {item.backgroundPositionX}% {item.backgroundPositionY}%;  background-size: cover; background-color: rgba(255,255,255,0.4);"></div>
 						    <div class="carousel-caption">
 						    	<f:if condition="{item.link}">
 						        	<f:then>
@@ -72,7 +71,10 @@
 	</f:if>
 	
 	
+	
 	<script>
+		
+		
 		
 		var interval = intval('<skbs:escape value="{interval}"></skbs:escape >');
 		if(!interval){

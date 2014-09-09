@@ -67,6 +67,27 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 * @validate NotEmpty
 	 */
 	protected $image = NULL;
+	
+	/**
+	 * backgroundPositionX
+	 *
+	 * @var int
+	 */
+	protected $backgroundPositionX = 50;
+	
+	/**
+	 * backgroundPositionY
+	 *
+	 * @var int
+	 */
+	protected $backgroundPositionY = 50;
+	
+	/**
+	 * backgroundSize
+	 *
+	 * @var int
+	 */
+	protected $backgroundSize = 100;
 
 	/**
 	 * Returns the captionTitle
@@ -161,6 +182,64 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity {
 	 */
 	public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image) {
 		$this->image = $image;
+	}
+	
+	
+	/**
+	 * Returns the backgroundPositionX
+	 *
+	 * @return int $$backgroundPositionX
+	 */
+	public function getBackgroundPositionX() {
+		return $this->backgroundPositionX;
+	}
+
+	/**
+	 * Sets the backgroundPositionX
+	 *
+	 * @param int $backgroundPositionX
+	 * @return void
+	 */
+	public function setBackgroundPositionX($backgroundPositionX) {
+		$this->backgroundPositionX = $backgroundPositionX;
+	}
+	
+	/**
+	 * Returns the backgroundPositionY
+	 *
+	 * @return int $backgroundPositionY
+	 */
+	public function getBackgroundPositionY() {
+		return $this->backgroundPositionY;
+	}
+
+	/**
+	 * Sets the backgroundPositionY
+	 *
+	 * @param int $backgroundPositionY
+	 * @return void
+	 */
+	public function setBackgroundPositionY($backgroundPositionY) {
+		$this->backgroundPositionY = $backgroundPositionY;
+	}
+	
+	/**
+	 * Returns the backgroundSize
+	 *
+	 * @return int $backgroundSize
+	 */
+	public function getBackgroundSize() {
+		return $this->backgroundSize;
+	}
+
+	/**
+	 * Sets the backgroundSize
+	 *
+	 * @param int $backgroundSize
+	 * @return void
+	 */
+	public function setBackgroundSize($backgroundSize) {
+		$this->backgroundSize = $backgroundSize;
 	}
 
 }
