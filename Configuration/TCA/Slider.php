@@ -113,13 +113,25 @@ $GLOBALS['TCA']['tx_skbootstrapslider_domain_model_slider'] = array(
 				'type' => 'inline',
 				'foreign_table' => 'tx_skbootstrapslider_domain_model_item',
 				'foreign_field' => 'slider',
+				'foreign_sortby' => 'crdate',
 				'maxitems'      => 9999,
 				'appearance' => array(
-					'collapseAll' => 0,
+					'collapseAll' => 1,
 					'levelLinksPosition' => 'top',
 					'showSynchronizationLink' => 1,
 					'showPossibleLocalizationRecords' => 1,
-					'showAllLocalizationLink' => 1
+					'expandSingle' => 1,
+					'showAllLocalizationLink' => 1,
+					'useSortable' => 1,
+					'enabledControls' => array(
+                        'info' => FALSE,
+                        'new' => FALSE,
+                        'dragdrop' => TRUE,
+                        'sort' => FALSE,
+                        'hide' => TRUE,
+                        'delete' => TRUE,
+                        'localize' => TRUE,
+                ),
 				),
 			),
 
