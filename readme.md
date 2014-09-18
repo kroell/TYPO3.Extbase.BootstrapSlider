@@ -11,3 +11,9 @@ http://getbootstrap.com/javascript/#carousel
 * Viel Spass
 
 Die Einbindung von Bootstrap muss separat erfolgen. Wird nicht durch die Ext eingebunden.
+
+
+Installation via Git
+========================
+* git clone https://github.com/kroell/TYPO3.Extbase.BootstrapSlider.git sk_bootstrap_slider
+* Im TYPO3 Backend über den Ext-Manager installieren
