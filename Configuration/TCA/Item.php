@@ -162,7 +162,7 @@ $GLOBALS['TCA']['tx_skbootstrapslider_domain_model_item'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 3,
-				'eval' => 'int'
+				'eval' => 'alphanum'
 			),
 		),
 		
@@ -172,7 +172,7 @@ $GLOBALS['TCA']['tx_skbootstrapslider_domain_model_item'] = array(
 			'config' => array(
 				'type' => 'input',
 				'size' => 3,
-				'eval' => 'int'
+				'eval' => 'alphanum'
 			),
 		),
 		'background_size' => array(

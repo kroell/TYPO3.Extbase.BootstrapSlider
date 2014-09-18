@@ -76,7 +76,7 @@
 		
 		
 		
-		var interval = intval('<skbs:escape value="{interval}"></skbs:escape >');
+		var interval = parseInt('<skbs:escape value="{interval}"></skbs:escape >');
 		if(!interval){
 			interval = 5000;
 		}

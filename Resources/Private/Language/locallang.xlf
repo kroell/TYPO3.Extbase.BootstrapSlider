@@ -31,13 +31,13 @@
 				<source>Bild</source>
 			</trans-unit>
 			<trans-unit id="tx_skbootstrapslider_domain_model_item.background_position_x">
-				<source>X-Position (in %)</source>
+				<source>X-Position (in %, Default 50)</source>
 			</trans-unit>
 			<trans-unit id="tx_skbootstrapslider_domain_model_item.background_position_y">
-				<source>Y-Position (in %)</source>
+				<source>Y-Position (in %, Default 50)</source>
 			</trans-unit>
 			<trans-unit id="tx_skbootstrapslider_domain_model_item.background_size">
-				<source>Groesse (in %)</source>
+				<source>Groesse (in %, Default 100)</source>
 			</trans-unit>
 		</body>
 	</file>
