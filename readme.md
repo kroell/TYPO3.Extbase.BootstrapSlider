@@ -15,5 +15,6 @@ Die Einbindung von Bootstrap muss separat erfolgen. Wird nicht durch die Ext ein
 
 Installation via Git
 ========================
+* In typo3/typo3conf/ext wechseln
 * git clone https://github.com/kroell/TYPO3.Extbase.BootstrapSlider.git sk_bootstrap_slider
 * Im TYPO3 Backend über den Ext-Manager installieren
